@@ -1,20 +1,9 @@
+import makeUser from '../src/home/make-user.js';
 const test = QUnit.test;
 
-// QUnit.testStart(() => {
-//     sessionStorage.clear();
-// });
-
-function makeUser(formData){
-
-    const user = {
-        name: formData.get('name'),
-        race: formData.get('race'),
-        level: 1,
-        gold: 20
-    };
-    return user;
-}
-
+QUnit.testStart(() => {
+    sessionStorage.clear();
+});
 
 test('return a user as an object', (assert) => {
     // arrange
