@@ -1,4 +1,5 @@
 import makeUser from './make-user.js';
+import api from '../services/api.js';
 
 const userSignUp = document.getElementById('user-sign-up');
 
@@ -7,6 +8,7 @@ userSignUp.addEventListener('submit', function(event) {
 
     const formData = new FormData(userSignUp);
     const user = makeUser(formData);
-    console.log(user);
+    api.signUp(user);
 
+    window.location = 'map.html';
 });
