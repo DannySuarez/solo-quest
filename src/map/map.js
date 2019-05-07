@@ -15,4 +15,3 @@ character.textContent = user.name;
 race.textContent = user.race;
 level.textContent = user.level;
 gold.textContent = user.gold;
-console.log(character);

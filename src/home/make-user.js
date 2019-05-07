@@ -1,5 +1,4 @@
 function makeUser(formData){
-
     const user = {
         name: formData.get('name'),
         race: formData.get('race'),
