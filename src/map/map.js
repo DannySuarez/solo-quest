@@ -11,7 +11,7 @@ if(!user) {
     window.location = './';
 }
 
-character.textContent = user.character;
+character.textContent = user.name;
 race.textContent = user.race;
 level.textContent = user.level;
 gold.textContent = user.gold;
