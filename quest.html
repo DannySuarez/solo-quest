@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/quest/quest.css">
+    <title>Quest</title>
+</head>
+<body>
+    <header>
+        <h1 id="new-title">Welcome Home</h1>
+        <div class="profile">
+            Name: <span id="name"></span>
+            Race: <span id="lives"></span>
+            Level: <span id="power-ups"></span>
+            Gold: <span id="coins"></span>
+        </div>
+    </header>
+    <main>
+        <p>
+            <img id="image" alt="">
+        </p>
+        <p id="description">
+            You wake up in an unfamiliar room with no memory of how you got here.
+            The room is decorated with toys that don't look like they have been played with for years.
+            You look around and realize you like this room.
+        </p>
+        <form id="choice-form">
+            <fieldset id="potential-responses">
+                <legend>Pick a choice</legend>
+                <label for="choice1">You approach the monster and try to console it.</label>
+                <input type="radio" id="choice1" name="choices" required>
+                <label for="choice2">You're no fool. This monster is faking it and you decide to try and scare it.</label>
+                <input type="radio" id="choice2" name="choices">
+                <label for="choice3">Fight</label>
+                <input type="radio" id="choice3" name="choices">
+
+            </fieldset>
+            <button>Submit</button>
+        </form>
+
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="map.html">Back to Map</a>
+        </section>
+    </main>
+    <script type="module" src="src/quest/quest.js"></script>
+</body>
+</html>
