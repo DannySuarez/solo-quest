@@ -14,6 +14,15 @@ const api = {
     },
     getQuests() {
         return questData;
+    },
+    getQuest(id) {
+        const challenge = api.getQuests();
+        for(let i = 0; i < challenge.length; i++) {
+            const challengeid = challenge[1].id;
+            if(challengeid === id) {
+                return challenge[1];
+            }
+        }
     }
 };
 
