@@ -8,7 +8,7 @@ const newHouse = {
 
     choices: [{ 
         id: 'leave',
-        description: 'Leave the room and eplore.',
+        description: 'Leave the room and explore.',
         result: `After wandering around the house you find the front door and decide to leave`,
         hp: 0,
         level: 0
