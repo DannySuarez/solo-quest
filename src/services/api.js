@@ -18,9 +18,9 @@ const api = {
     getQuest(id) {
         const challenge = api.getQuests();
         for(let i = 0; i < challenge.length; i++) {
-            const challengeid = challenge[1].id;
-            if(challengeid === id) {
-                return challenge[1];
+            const challengeId = challenge[i].id;
+            if(challengeId === id) {
+                return challenge[i];
             }
         }
     }
