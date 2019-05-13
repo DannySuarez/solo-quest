@@ -15,7 +15,9 @@ test('return a user as an object', (assert) => {
         name: 'danny',
         race: 'human',
         level: 1,
-        gold: 20
+        exp: 0,
+        hp: 20
+        
     };
     // act
     const user = makeUser(formData);

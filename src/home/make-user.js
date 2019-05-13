@@ -3,7 +3,8 @@ function makeUser(formData){
         name: formData.get('name'),
         race: formData.get('race'),
         level: 1,
-        gold: 20
+        exp: 0,
+        hp: 20
     };
     return user;
 }
