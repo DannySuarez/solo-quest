@@ -4,7 +4,8 @@ function loadProfile() {
     const character = document.getElementById('name');
     const race = document.getElementById('race');
     const level = document.getElementById('level');
-    const gold = document.getElementById('gold');
+    const exp = document.getElementById('exp');
+    const hp = document.getElementById('hp');
 
     const user = api.getUser();
 
@@ -15,6 +16,7 @@ function loadProfile() {
     character.textContent = user.name;
     race.textContent = user.race;
     level.textContent = user.level;
-    gold.textContent = user.gold;
+    exp.textContent = user.exp;
+    hp.textContent = user.hp;
 }
 export default loadProfile;
