@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Determination';
+    src: url('../../DeterminationMonoWeb.woff') format("woff");
+}
+
+body {
+    background-color: #666666;
+    font-family: 'Determination';
+}
+a {
+    display: block;
+    margin: 5px;
+}

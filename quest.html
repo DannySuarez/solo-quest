@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/quest/quest.css">
+    <title>Quest</title>
+</head>
+<body>
+    <header>
+        <h1 id="new-title"></h1>
+        <div class="profile">
+            Name: <span id="name"></span>
+            Race: <span id="race"></span>
+            Level: <span id="level"></span>
+            EXP: <span id="exp"></span>
+            HP: <span id="hp"></span>
+        </div>
+    </header>
+    <main>
+        <p>
+            <img id="image" alt="">
+        </p>
+        <p id="description">
+
+        </p>
+        <form id="choice-form">
+            <fieldset id="potential-responses">
+                <legend>Pick a choice</legend>
+            </fieldset>
+            <button>Submit</button>
+        </form>
+
+        <section id="result" class="hidden">
+            <p id="result-description"></p>
+            <a href="map.html">Back to Map</a>
+        </section>
+    </main>
+    <script type="module" src="src/quest/quest.js"></script>
+</body>
+</html>

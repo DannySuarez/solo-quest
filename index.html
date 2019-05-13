@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./src/home/index.css">
+    <title>Adventure Time</title>
 </head>
 <body>
-  
+    <header>
+    <h1>Ready for an adventure?</h1>
+    </header>
+    <main>
+        <form id="user-sign-up">
+            <fieldset>
+                <legend>Character Creation</legend>
+                <p id="character">
+                    <label>
+                        Name:
+                        <input type="text" name="name" required>
+                    </label> 
+                </p>
+
+                <label for="race">Race:</label>
+                <select name="race" id="race">
+                    <option value="" hidden disabled selected>Select your race!</option>
+                    <option value="human">Human</option>
+                    <option value="monster">Monster</option>
+                  </select>
+                <p>Level: 1</p>
+                <p>EXP: 0</p>
+                <p>HP: 20</p>
+            </fieldset>
+            <button>Start Your Adventure!</button>
+        </form>
+    </main>
+    <script type="module" src="./src/home/index.js"></script>
 </body>
 </html>
