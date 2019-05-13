@@ -11,12 +11,14 @@ const challengeId = searchParams.get('id');
 const challenge = api.getQuest(challengeId);
 
 const title = document.getElementById('new-title');
+const image = document.getElementById('image');
 const description = document.getElementById('description');
 const choiceForm = document.getElementById('choice-form');
 const responses = document.getElementById('potential-responses');
 const resultDescription = document.getElementById('result-description');
 
 title.textContent = challenge.title;
+image.src = '../../assets/' + challenge.image;
 description.textContent = challenge.description;
 
 for(let i = 0; i < challenge.choices.length; i++) {

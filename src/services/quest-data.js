@@ -1,7 +1,7 @@
 const newHouse = {
     id: 'newHouse',
     title: 'Welcome Home',
-    image: 'image.jpg',
+    image: 'room.png',
     description: `You wake up in an unfamiliar room with no memory of how you got here.
                     The room is decorated with toys that don't look like they have been played with for years.
                     You look around and realize you like this room.`,
@@ -34,7 +34,7 @@ const newHouse = {
 const outside = {
     id: 'outside',
     title: 'A New World',
-    image: 'image.jpg',
+    image: 'whimsun.jpg',
     description: `You follow the only path in this world and soon encounter a sad looking monster.
                     What will you do?`,
     
